@@ -1,15 +1,79 @@
+function(){
+var firebaseRef = firebase.database();
+// var provider = new firebase.auth.GoogleAuthProvider();
+// //provider.addScope('https://www.googleapis.com/auth/plus.login');
+//
+// firebase.auth().signInWithRedirect(provider);
+//
+//
+// firebase.auth().getRedirectResult().then(function(result) {
+//   if (result.credential) {
+//     // This gives you a Google Access Token. You can use it to access the Google API.
+//     var token = result.credential.accessToken;
+//     // ...
+//   }
+//   // The signed-in user info.
+//   var user = result.user;
+// }).catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+//   // The email of the user's account used.
+//   var email = error.email;
+//   // The firebase.auth.AuthCredential type that was used.
+//   var credential = error.credential;
+//   // ...
+// });
+alert('d');
+var provider = new firebase.auth.GoogleAuthProvider();
+
+provider.addScope('https://www.googleapis.com/auth/plus.login');
+
+if (authData !== null) {
+  console.log("Authenticated successfully with payload:", authData);
+} else {
+
+firebase.auth().signInWithRedirect(provider);
+
+firebase.auth().getRedirectResult().then(function(authData) {
+    console.log(authData);
+}).catch(function(error) {
+    console.log(error);
+});
+}
+
+// var ref = firebase.database();
+// ref.onAuth(function(authData) {
+//   if (authData !== null) {
+//     console.log("Authenticated successfully with payload:", authData);
+//   } else {
+//     // Try to authenticate with Google via OAuth redirection
+//     ref.authWithOAuthRedirect("google", function(error, authData) {
+//       if (error) {
+//         console.log("Login Failed!", error);
+//       }
+//     });
+//   }
+// })
+
+}()
+
+
+
 function appViewModel() {
   var self = this;
   var map, city, infowindow;
   var grouponLocations = [];
   var grouponReadableNames = [];
 
+
+
   this.grouponDeals = ko.observableArray([]); //initial list of deals
   this.filteredList = ko.observableArray([]); //list filtered by search keyword
   this.mapMarkers = ko.observableArray([]);  //holds all map markers
   this.dealStatus = ko.observable('Searching for deals nearby...');
   this.searchStatus = ko.observable();
-  this.searchLocation = ko.observable('Washington DC');
+  this.searchLocation = ko.observable('Taipei');
   this.loadImg = ko.observable();
   this.numDeals = ko.computed(function() {
     return self.filteredList().length;
@@ -18,107 +82,104 @@ function appViewModel() {
   //Holds value for list togglings
   this.toggleSymbol = ko.observable('hide');
 
-  //Hold the current location's lat & lng - useful for re-centering map
-  this.currentLat = ko.observable(38.906830);
-  this.currentLng = ko.observable(-77.038599);
 
   // When a deal on the list is clicked, go to corresponding marker and open its info window.
-  this.goToMarker = function(clickedDeal) {
-    var clickedDealName = clickedDeal.dealName;
-    for(var key in self.mapMarkers()) {
-      if(clickedDealName === self.mapMarkers()[key].marker.title) {
-        map.panTo(self.mapMarkers()[key].marker.position);
-        map.setZoom(14);
-        infowindow.setContent(self.mapMarkers()[key].content);
-        infowindow.open(map, self.mapMarkers()[key].marker);
-        map.panBy(0, -150);
-        self.mobileShow(false);
-        self.searchStatus('');
-      }
-    }
-  };
+  // this.goToMarker = function(clickedDeal) {
+  //   var clickedDealName = clickedDeal.dealName;
+  //   for(var key in self.mapMarkers()) {
+  //     if(clickedDealName === self.mapMarkers()[key].marker.title) {
+  //       map.panTo(self.mapMarkers()[key].marker.position);
+  //       map.setZoom(14);
+  //       infowindow.setContent(self.mapMarkers()[key].content);
+  //       infowindow.open(map, self.mapMarkers()[key].marker);
+  //       map.panBy(0, -150);
+  //       self.mobileShow(false);
+  //       self.searchStatus('');
+  //     }
+  //   }
+  // };
 
   // Handle the input given when user searches for deals in a location
-  this.processLocationSearch = function() {
-    //Need to use a jQuery selector instead of KO binding because this field is affected by the autocomplete plugin.  The value inputted does not seem to register via KO.
-    self.searchStatus('');
-    self.searchStatus('Searching...');
-    var newAddress = $('#autocomplete').val();
-
-    //newGrouponId will hold the Groupon-formatted ID of the inputted city.
-    var newGrouponId, newLat, newLng;
-    for(var i = 0; i < 171; i++) {
-      var name = grouponLocations.divisions[i].name;
-      if(newAddress == name) {
-        newGrouponId = grouponLocations.divisions[i].id;
-        self.currentLat(grouponLocations.divisions[i].lat);
-        self.currentLng(grouponLocations.divisions[i].lng);
-      }
-    }
-    //Form validation - if user enters an invalid location, return error.
-    if(!newGrouponId) {
-      return self.searchStatus('Not a valid location, try again.');
-    } else {
-      //Replace current location with new (human-formatted) location for display in other KO bindings.
-      self.searchLocation(newAddress);
-
-      //clear our current deal and marker arrays
-      clearMarkers();
-      self.grouponDeals([]);
-      self.filteredList([]);
-      self.dealStatus('Loading...');
-      self.loadImg('<img src="img/ajax-loader.gif">');
-      //perform new groupon search and center map to new location
-      getGroupons(newGrouponId);
-      map.panTo({lat: self.currentLat(), lng: self.currentLng()});
-    }
-  };
-
-
-  this.filterKeyword = ko.observable('');
-
-  //Compare search keyword against names and dealTags of existing deals.  Return a filtered list and map markers of request.
-
-  this.filterResults = function() {
-    var searchWord = self.filterKeyword().toLowerCase();
-    var array = self.grouponDeals();
-    if(!searchWord) {
-      return;
-    } else {
-      //first clear out all entries in the filteredList array
-      self.filteredList([]);
-      //Loop through the grouponDeals array and see if the search keyword matches 
-      //with any venue name or dealTags in the list, if so push that object to the filteredList 
-      //array and place the marker on the map.
-      for(var i=0; i < array.length; i++) {
-        if(array[i].dealName.toLowerCase().indexOf(searchWord) != -1) {
-          self.mapMarkers()[i].marker.setMap(map);
-          self.filteredList.push(array[i]);
-        } else{
-          for(var j = 0; j < array[i].dealTags.length; j++) {
-            if(array[i].dealTags[j].name.toLowerCase().indexOf(searchWord) != -1) {
-              self.mapMarkers()[i].marker.setMap(map);
-              self.filteredList.push(array[i]);
-          //otherwise hide all other markers from the map
-          } else {
-              self.mapMarkers()[i].marker.setMap(null);
-            }
-          }
-          self.dealStatus(self.numDeals() + ' deals found for ' + self.filterKeyword());
-        }
-      }
-    }
-  };
-
-  //Clear keyword from filter and show all deals in current location again.
-  this.clearFilter = function() {
-    self.filteredList(self.grouponDeals());
-    self.dealStatus(self.numDeals() + ' food and drink deals found near ' + self.searchLocation());
-    self.filterKeyword('');
-    for(var i = 0; i < self.mapMarkers().length; i++) {
-      self.mapMarkers()[i].marker.setMap(map);
-    }
-  };
+  // this.processLocationSearch = function() {
+  //   //Need to use a jQuery selector instead of KO binding because this field is affected by the autocomplete plugin.  The value inputted does not seem to register via KO.
+  //   self.searchStatus('');
+  //   self.searchStatus('Searching...');
+  //   var newAddress = $('#autocomplete').val();
+  //
+  //   //newGrouponId will hold the Groupon-formatted ID of the inputted city.
+  //   var newGrouponId, newLat, newLng;
+  //   for(var i = 0; i < 171; i++) {
+  //     var name = grouponLocations.divisions[i].name;
+  //     if(newAddress == name) {
+  //       newGrouponId = grouponLocations.divisions[i].id;
+  //       self.currentLat(grouponLocations.divisions[i].lat);
+  //       self.currentLng(grouponLocations.divisions[i].lng);
+  //     }
+  //   }
+  //   //Form validation - if user enters an invalid location, return error.
+  //   if(!newGrouponId) {
+  //     return self.searchStatus('Not a valid location, try again.');
+  //   } else {
+  //     //Replace current location with new (human-formatted) location for display in other KO bindings.
+  //     self.searchLocation(newAddress);
+  //
+  //     //clear our current deal and marker arrays
+  //     clearMarkers();
+  //     self.grouponDeals([]);
+  //     self.filteredList([]);
+  //     self.dealStatus('Loading...');
+  //     self.loadImg('<img src="img/ajax-loader.gif">');
+  //     //perform new groupon search and center map to new location
+  //     getGroupons(newGrouponId);
+  //     map.panTo({lat: self.currentLat(), lng: self.currentLng()});
+  //   }
+  // };
+  //
+  //
+  // this.filterKeyword = ko.observable('');
+  //
+  // //Compare search keyword against names and dealTags of existing deals.  Return a filtered list and map markers of request.
+  //
+  // this.filterResults = function() {
+  //   var searchWord = self.filterKeyword().toLowerCase();
+  //   var array = self.grouponDeals();
+  //   if(!searchWord) {
+  //     return;
+  //   } else {
+  //     //first clear out all entries in the filteredList array
+  //     self.filteredList([]);
+  //     //Loop through the grouponDeals array and see if the search keyword matches
+  //     //with any venue name or dealTags in the list, if so push that object to the filteredList
+  //     //array and place the marker on the map.
+  //     for(var i=0; i < array.length; i++) {
+  //       if(array[i].dealName.toLowerCase().indexOf(searchWord) != -1) {
+  //         self.mapMarkers()[i].marker.setMap(map);
+  //         self.filteredList.push(array[i]);
+  //       } else{
+  //         for(var j = 0; j < array[i].dealTags.length; j++) {
+  //           if(array[i].dealTags[j].name.toLowerCase().indexOf(searchWord) != -1) {
+  //             self.mapMarkers()[i].marker.setMap(map);
+  //             self.filteredList.push(array[i]);
+  //         //otherwise hide all other markers from the map
+  //         } else {
+  //             self.mapMarkers()[i].marker.setMap(null);
+  //           }
+  //         }
+  //         self.dealStatus(self.numDeals() + ' deals found for ' + self.filterKeyword());
+  //       }
+  //     }
+  //   }
+  // };
+  //
+  // //Clear keyword from filter and show all deals in current location again.
+  // this.clearFilter = function() {
+  //   self.filteredList(self.grouponDeals());
+  //   self.dealStatus(self.numDeals() + ' food and drink deals found near ' + self.searchLocation());
+  //   self.filterKeyword('');
+  //   for(var i = 0; i < self.mapMarkers().length; i++) {
+  //     self.mapMarkers()[i].marker.setMap(map);
+  //   }
+  // };
 
   //toggles the list view
   this.listToggle = function() {
@@ -136,10 +197,14 @@ function appViewModel() {
 
 // Initialize Google map, perform initial deal search on a city.
   function mapInitialize() {
+
+
+
+
     city = new google.maps.LatLng(38.906830, -77.038599);
     map = new google.maps.Map(document.getElementById('map-canvas'), {
           center: city,
-          zoom: 10,
+          zoom: 20,
           zoomControlOptions: {
             position: google.maps.ControlPosition.LEFT_CENTER,
             style: google.maps.ZoomControlStyle.SMALL
@@ -152,15 +217,72 @@ function appViewModel() {
         });
     clearTimeout(self.mapRequestTimeout);
 
+    var infoWindow = new google.maps.InfoWindow({map: map});
+     // get the current location to search
+     if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(function(position) {
+                var pos = {
+                  lat: position.coords.latitude,
+                  lng: position.coords.longitude
+                };
+
+                //Hold the current location's lat & lng - useful for re-centering map
+                self.currentLat = ko.observable(pos.lat);
+                self.currentLng = ko.observable(pos.lng);
+
+                infoWindow.setPosition(pos);
+                infoWindow.setContent('Location found.');
+                map.setCenter(pos);
+              }, function() {
+                handleLocationError(true, infoWindow, map.getCenter());
+              });
+            } else {
+              // Browser doesn't support Geolocation
+              handleLocationError(false, infoWindow, map.getCenter());
+              // Add marker on user click
+                map.addListener('click', function(e) {
+                  firebaseRef.ref().push({lat: e.latLng.lat(), lng: e.latLng.lng()});
+                });
+
+                // Create a heatmap.
+                var heatmap = new google.maps.visualization.HeatmapLayer({
+                  data: [],
+                  map: map,
+                  radius: 50
+                });
+
+                firebaseRef.ref().on("child_added", function(snapshot, prevChildKey) {
+                  // Get latitude and longitude from Firebase.
+                  var newPosition = snapshot.val();
+
+                  // Create a google.maps.LatLng object for the position of the marker.
+                  // A LatLng object literal (as above) could be used, but the heatmap
+                  // in the next step requires a google.maps.LatLng object.
+                  var latLng = new google.maps.LatLng(newPosition.lat, newPosition.lng);
+
+                  heatmap.getData().push(latLng);
+                });
+              }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+              infoWindow.setPosition(pos);
+              infoWindow.setContent(browserHasGeolocation ?
+                                    'Error: The Geolocation service failed.' :
+                                    'Error: Your browser doesn\'t support geolocation.');
+            }
+
+
+
+
     google.maps.event.addDomListener(window, "resize", function() {
        var center = map.getCenter();
        google.maps.event.trigger(map, "resize");
-       map.setCenter(center); 
+       map.setCenter(center);
     });
 
     infowindow = new google.maps.InfoWindow({maxWidth: 300});
-    getGroupons('washington-dc');
-    getGrouponLocations();
+//    getGroupons('taipei');
+//    getGrouponLocations();
   }
 
 // Use API to get deal data and store the info as objects in an array
@@ -193,8 +315,8 @@ function appViewModel() {
               shortBlurb = data.deals[i].announcementTitle,
               tags = data.deals[i].tags;
 
-          // Some venues have a Yelp rating included. If there is no rating, 
-          //function will stop running because the variable is undefined. 
+          // Some venues have a Yelp rating included. If there is no rating,
+          //function will stop running because the variable is undefined.
           //This if statement handles that scenario by setting rating to an empty string.
           var rating;
           if((data.deals[i].merchant.ratings == null) || data.deals[i].merchant.ratings[0] === undefined ) { rating = '';
@@ -205,11 +327,11 @@ function appViewModel() {
           }
 
           self.grouponDeals.push({
-            dealName: venueName, 
-            dealLat: venueLat, 
-            dealLon: venueLon, 
-            dealLink: gLink, 
-            dealImg: gImg, 
+            dealName: venueName,
+            dealLat: venueLat,
+            dealLon: venueLon,
+            dealLink: gLink,
+            dealImg: gImg,
             dealBlurb: blurb,
             dealAddress: address + "<br>" + city + ", " + state + " " + zip,
             dealShortBlurb: shortBlurb,
@@ -276,9 +398,9 @@ function appViewModel() {
     self.mapMarkers([]);
   }
 
-// Groupon's deal locations have a separate ID than the human-readable name 
-//(eg washington-dc instead of Washington DC). This ajax call uses the Groupon 
-//Division API to pull a list of IDs and their corresponding names to use for 
+// Groupon's deal locations have a separate ID than the human-readable name
+//(eg washington-dc instead of Washington DC). This ajax call uses the Groupon
+//Division API to pull a list of IDs and their corresponding names to use for
 //validation in the search bar.
 
   function getGrouponLocations() {
@@ -327,6 +449,12 @@ function appViewModel() {
     }
   };
 
+
+
+
+
+
+
   //Re-center map to current city if you're viewing deals that are further away
   this.centerMap = function() {
     infowindow.close();
@@ -337,7 +465,7 @@ function appViewModel() {
     } else {
       self.searchStatus('');
       map.panTo(cityCenter);
-      map.setZoom(10);
+      map.setZoom(20);
     }
   };
 
