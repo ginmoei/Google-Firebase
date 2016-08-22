@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script type="text/javascript" src="js/firebase.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>CheapSheet - Find Deals Around You!</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
   <div id="map-canvas"></div>
 
+  <!--
   <div class="searchbar" data-bind="visible: searchBarShow() === true">
     <form data-bind="submit: processLocationSearch">
       <input type="text" placeholder="Find deals in your area" data-bind="value: searchLocation, selectOnFocus: true" id="autocomplete">
@@ -23,7 +27,7 @@
       <p data-bind="visible: filterKeyword().length > 0, click: clearFilter" class="clearbutton">Clear filter</p>
     </form>
   </div>
-
+-->
   <div title="Re-center map" class="locbtn-large" data-bind="click: centerMap">
     <i class="fa fa-compass fa-2x"></i>
   </div>
