@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <name>Climbing around the world</name>
+  <description><![CDATA[Need to search thru UKC articles, planetfear and rockrun.com. Also go thru Summit.com? rockclimbing.com? Granite around Madrid? LMC NYE holiday ideas.]]></description>
+  <Style id="style15">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style46">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/green-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style50">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style28">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style35">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style20">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style22">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style10">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style12">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style31">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style1">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style55">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style57">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/red-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style65">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style5">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style34">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style37">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style3">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style19">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style21">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style33">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style60">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style54">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style8">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style2">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style59">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style24">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style13">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style66">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style48">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style7">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style29">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style23">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style64">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style25">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style44">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style39">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style56">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style30">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style26">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style41">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style63">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style40">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style18">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style52">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style58">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style62">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style36">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style67">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style42">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style61">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style45">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style49">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style47">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style51">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style6">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style43">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style9">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style14">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style4">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style27">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.google.com/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style11">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_uk/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style38">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_uk/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style16">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style53">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_ALL/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style17">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_uk/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Style id="style32">
+    <IconStyle>
+      <Icon>
+        <href>http://maps.gstatic.com/intl/en_uk/mapfiles/ms/micons/blue-dot.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+  <Placemark>
+    <name>Freycinet, Tasmania</name>
+    <description><![CDATA[<span style="font-weight:bold"><span style="text-decoration:underline">JFMAM</span>JJA<span style="text-decoration:underline">SOND</span></span><br style="font-weight:bold"><br>Trad and sport. The area is good all year round, but spring, summer and autumn
+(September through to May) are your best bets for pleasant climbing
+conditions.<br><br><a href="http://blog.rockrun.com/2008/05/x-file-2-tasmania-freycinet-peninsula.html" target="_blank">Rock+run article</a><br>]]></description>
+    <styleUrl>#style15</styleUrl>
+    <Point>
+      <coordinates>148.312683,-42.198006,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kjugekull, Sweden</name>
+    <description><![CDATA[<span style="font-weight:bold;text-decoration:underline">JFM</span>AMJJAS<span style="font-weight:bold">O<span style="text-decoration:underline">ND</span></span><br><br>A superbly picturesque granite bouldering area, featuring many
+fantastic fontainebleau-esque blocs and traverses (over 800 problems)
+on often huge glacially worn granite boulders. The area is situated in
+a deciduous wood, and in some parts overflows in to meadows and some
+hillside settings.<br><span style="font-weight:bold"><br></span><span style="font-weight:bold"></span>The
+best conditions generally occur from late October through to March. It
+is possible to climb throughout the year, although the Spring, Summer
+and even Autumn can be pretty warm. The maximum rainfall occurs in late
+summer, and the minimum in early spring. The boulders dry quickly after
+rain, especially those in the meadows.<br><br><a href="http://blog.rockrun.com/2008/04/x-file-1-kjugekull-bouldering.html" target="_blank">Rock+run article</a><br>]]></description>
+    <styleUrl>#style46</styleUrl>
+    <Point>
+      <coordinates>15.029297,56.316536,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Indian Creek</name>
+    <description><![CDATA[<DIV>JF<STRONG><U>MA</U></STRONG>MJJASO<STRONG><U>ND</U></STRONG></DIV>
+<DIV><STRONG><U></U></STRONG>&nbsp;</DIV>
+<DIV><A href="http://www.ukclimbing.com/articles/page.php?id=888" target="_blank">http://www.ukclimbing.com/articles/page.php?id=888</A></DIV>
+<DIV>&nbsp;</DIV>
+<DIV><A href="http://www.ukclimbing.com/articles/page.php?id=1951" target="_blank">http://www.ukclimbing.com/articles/page.php?id=1951</A></DIV>]]></description>
+    <styleUrl>#style50</styleUrl>
+    <Point>
+      <coordinates>-109.345467,37.871601,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>New Zealand</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.ukclimbing.com/articles/page.php?id=24" target="_blank">Overview from Fiend</a></div>]]></description>
+    <styleUrl>#style28</styleUrl>
+    <Point>
+      <coordinates>174.199219,-41.112469,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kalymnos</name>
+    <description><![CDATA[<DIV dir="ltr"><A href="http://blog.rockrun.com/2008/05/x-file-3-kalymnos-sport-climbing.html" target="_blank">Rock &amp; run article</A></DIV>
+<DIV dir="ltr">&nbsp;</DIV>
+<DIV dir="ltr"><A href="http://www.planetfear.com/articles/Aegean_Reflections___1064.html" target="_blank">Planetfear</A></DIV>]]></description>
+    <styleUrl>#style35</styleUrl>
+    <Point>
+      <coordinates>26.978302,37.003651,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Madagascar</name>
+    <description><![CDATA[<a href="http://www.planetfear.com/article_detail.asp?a_id=1141" target="_blank">Planetfear</a>]]></description>
+    <styleUrl>#style20</styleUrl>
+    <Point>
+      <coordinates>46.757812,-20.303417,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Costa Blanca</name>
+    <description><![CDATA[<a href="http://www.planetfear.com/article_detail.asp?a_id=1139" target="_blank">Planetfear on DWS</a><br>]]></description>
+    <styleUrl>#style22</styleUrl>
+    <Point>
+      <coordinates>-2.021484,36.949890,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Grand Teton</name>
+    <description><![CDATA[<a href="http://www.mikeandjoy.net/Jackson06/Grand/thegrand.html" target="_blank">Mike and Joy - Grand Teton in a day</a><br><a href="http://www.patagonia.com/web/us/patagonia.go?assetid=29179" target="_blank">Patagonia article on the full traverse</a><br>]]></description>
+    <styleUrl>#style10</styleUrl>
+    <Point>
+      <coordinates>-110.647430,43.777042,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mellobloc</name>
+    <description><![CDATA[<div dir="ltr">Annually in May<br><a href="http://www.ukclimbing.com/articles/page.php?id=1022" target="_blank"><br>UKC article</a></div>]]></description>
+    <styleUrl>#style12</styleUrl>
+    <Point>
+      <coordinates>9.636383,46.210724,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Torres del Paine</name>
+    <description><![CDATA[<div dir="ltr">JFMND<br>not sure about N.  fancy trying whillan&apos;s route up the central tower.  Goes at TD-/D+</div>]]></description>
+    <styleUrl>#style31</styleUrl>
+    <Point>
+      <coordinates>-72.631989,-51.515579,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Aconcagua</name>
+    <description><![CDATA[<div dir="ltr">DJFM<br>Fancy the Polish Glacier with ski descent (is there enough snow any more?)<br><br>DON&apos;T fancy walking down/up the scree route.</div>]]></description>
+    <styleUrl>#style1</styleUrl>
+    <Point>
+      <coordinates>-70.015869,-33.022484,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cordillera Darwin</name>
+    <description><![CDATA[<div dir="ltr">NDJF<br>one of the more inaccessible mountain ranges of the world.  have to travel by boat to get there.  lots of unclimbed alpine stylee peaks<br><br>more fun than greenland</div>]]></description>
+    <styleUrl>#style55</styleUrl>
+    <Point>
+      <coordinates>-70.202637,-54.533833,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Monte Olivia</name>
+    <description><![CDATA[<div dir="ltr">NDJFM<br>Turned back whilst soloing.  Pile of scree.  Paul Winder would love it.</div>]]></description>
+    <styleUrl>#style57</styleUrl>
+    <Point>
+      <coordinates>-68.145103,-54.769405,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Illimani</name>
+    <description><![CDATA[<div dir="ltr">~6400m traverse looks like a worthy route.</div>]]></description>
+    <styleUrl>#style65</styleUrl>
+    <Point>
+      <coordinates>-68.159180,-16.383390,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Huayna Potosi</name>
+    <description><![CDATA[<div dir="ltr">6,088m would like to ski down the french route.</div>]]></description>
+    <styleUrl>#style5</styleUrl>
+    <Point>
+      <coordinates>-68.225098,-16.846605,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Condorriri</name>
+    <description><![CDATA[<div dir="ltr">beautiful mountain - easiest route up is a D though.</div>]]></description>
+    <styleUrl>#style34</styleUrl>
+    <Point>
+      <coordinates>-67.961426,-16.720385,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Antalya</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.ukclimbing.com/articles/page.php?id=134" target="_blank">UKC article</a><br><a href="http://planetfear.com/travel_detail.asp?t_id=118" target="_blank">Planetfear</a><br><a href="http://www.climbingcamp-antalya.com/" target="_blank">Somewhere to stay</a><br><br><a href="http://www.planetfear.com/articles/Turkish_Sea_Cliffs_A_New_Frontier_1039.html" target="_blank">More from PlanetFear</a><br></div>]]></description>
+    <styleUrl>#style37</styleUrl>
+    <Point>
+      <coordinates>30.822144,36.884014,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Fairhead</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.fairheadclimbers.com/pages/visiting/visiting.htm" target="_blank">Fairhard guide and forum</a></div>]]></description>
+    <styleUrl>#style3</styleUrl>
+    <Point>
+      <coordinates>-5.990295,55.032745,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Dalkey Quarry</name>
+    <description><![CDATA[New guide to be ticked...<br>]]></description>
+    <styleUrl>#style19</styleUrl>
+    <Point>
+      <coordinates>-6.103764,53.277531,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Setesdal, Norway</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://blog.rockrun.com/2008/06/x-file-1-setesdal-norway.html" target="_blank">Rock and run article</a></div>]]></description>
+    <styleUrl>#style21</styleUrl>
+    <Point>
+      <coordinates>7.544861,59.199844,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Buoux</name>
+    <description><![CDATA[<div dir="ltr">Sport climbing<br><br><a href="http://blog.rockrun.com/2008/06/x-file-5-buoux-sport-climbing.html" target="_blank">Rock and run article</a></div>]]></description>
+    <styleUrl>#style33</styleUrl>
+    <Point>
+      <coordinates>5.383301,43.833290,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rocky Mountain National Park</name>
+    <description><![CDATA[<DIV dir="ltr"><A href="http://blog.rockrun.com/2008/06/x-file-6-rmnp-bouldering.html" target="_blank">Bouldering article from R+R</A></DIV>]]></description>
+    <styleUrl>#style60</styleUrl>
+    <Point>
+      <coordinates>-105.682983,40.332935,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Sardinia</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.planetfear.com/article_detail.asp?a_id=1147" target="_blank">Planetfear article</a></div>]]></description>
+    <styleUrl>#style54</styleUrl>
+    <Point>
+      <coordinates>9.184570,40.162083,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bishop</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://blog.rockrun.com/2008/07/article-bishop-bouldering.html" target="_blank">Rock and run article</a></div>]]></description>
+    <styleUrl>#style8</styleUrl>
+    <Point>
+      <coordinates>-118.395798,37.361698,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Idaho</name>
+    <description><![CDATA[Climb Idaho<br><br><a href="http://climbidaho.com/site1/index.php?option=com_content&amp;view=article&amp;id=83:mp3-productions&amp;catid=1:latest-news&amp;Itemid=55" target="_blank">Part 1</a><br><a href="http://climbidaho.com/site1/index.php?option=com_content&amp;view=article&amp;id=86:mp3-part-2&amp;catid=1:latest-news&amp;Itemid=55" target="_blank">Part 2</a><br>]]></description>
+    <styleUrl>#style2</styleUrl>
+    <Point>
+      <coordinates>-114.345703,43.818676,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Boulder</name>
+    <description><![CDATA[<DIV dir="ltr">Bouldering at Boulder = <A href="http://www.flagstaffmountainbouldering.blogspot.com/" target="_blank">Flagstaff Mountain</A></DIV>]]></description>
+    <styleUrl>#style59</styleUrl>
+    <Point>
+      <coordinates>-105.277863,40.002373,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Thailand</name>
+    <description><![CDATA[Sun drenched limestone sport and DWS<br><br><a href="http://blog.rockrun.com/2008/07/x-file-7-thailand-sport-climbing.html" target="_blank">Rock and run article</a><br><br><a href="http://www.climber.me/2008/07/29/beginners-guide-to-rock-climbing-in-thailand/" target="_blank">Beginner guide from climber.me</a><br><br><a href="http://blog.rockrun.com/2008/09/x-file-9-koh-tao-thailand.html" target="_blank">Koh Tao, Thailand</a><br><br><br>]]></description>
+    <styleUrl>#style24</styleUrl>
+    <Point>
+      <coordinates>99.475708,8.352823,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Corsica</name>
+    <description><![CDATA[<br>]]></description>
+    <styleUrl>#style13</styleUrl>
+    <Point>
+      <coordinates>9.052734,42.000324,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mallorca</name>
+    <description><![CDATA[<a href="http://www.rockfax.com/publications/miniguides/item.php?id=147" target="_blank">DWS guide</a> to Mallorca<br>]]></description>
+    <styleUrl>#style66</styleUrl>
+    <Point>
+      <coordinates>2.941589,39.614151,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>El Chorro</name>
+    <description><![CDATA[Sport climbing. <a href="http://www.rockfax.com/publications/books/item.php?id=143" target="_blank">New guide</a> due out from Rockfax in Dec 2008. <br>]]></description>
+    <styleUrl>#style48</styleUrl>
+    <Point>
+      <coordinates>-4.759033,36.909344,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Vall Di Mello &amp; Val Masino</name>
+    <description><![CDATA[<DIV><A href="http://blog.rockrun.com/2008/07/x-file-8-val-di-mello-val-masino.html" target="_blank">Rock and run article</A><BR><A href="http://blog.rockrun.com/2009/07/x-file-18-val-masino-alpine-italy.html" target="_blank">Rock and run article #2</A></DIV>
+<DIV><BR>A sumptuously picturesque granite bouldering area perched in a hanging valley in the Italian Alps. The area features hundreds of bloc and traverse lines, of all grades, in alpine meadows and woodland settings.<br>&nbsp;</div>]]></description>
+    <styleUrl>#style7</styleUrl>
+    <Point>
+      <coordinates>9.648743,46.210724,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Basel</name>
+    <description><![CDATA[<a href="http://blog.rockrun.com/2008/08/x-file-8-basel-jura-switzerland.html" target="_blank">Rock and run article</a><br><br>A great limestone sport climbing area for those operating from F4 to
+F6c+ (or looking for some leisurely mileage), in a close proximity to
+the Swiss city of Basel. The crags are a selection of solid high
+quality limestone outcrops mainly situated on wooded hillsides in out
+of town locations, yet still close enough to facilities and small to
+large urban conurbations. Most of the climbing is on edges and small
+pockets over terrain varying from the steep side of vertical to slabby
+walls. An ideal destination for a long weekend’s mid-grade sport
+climbing, in a fantastic location!<br><br><br>]]></description>
+    <styleUrl>#style29</styleUrl>
+    <Point>
+      <coordinates>7.588120,47.556835,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Hong Kong</name>
+    <description><![CDATA[<A href="http://blog.rockrun.com/2008/08/article-climbing-in-hong-kong.html" target="_blank">Rock and run article</A><BR><BR>Best from October to January<BR><BR>Also, contacts on UKB.<BR>]]></description>
+    <styleUrl>#style23</styleUrl>
+    <Point>
+      <coordinates>114.183655,22.243343,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Burren, Doolin and Aran Islands</name>
+    <description><![CDATA[<a href="http://www.rockrun.com/ProductDetail.asp?ProductID=4970" target="_blank">New guide out</a>.<br><br>Situated in the north-western corner of Co. Clare the Burren has a lot
+to offer the visiting climber - easily accessible, quick drying west
+facing limestone cliffs are in plentiful supply. This climbing guide
+covers not only the Burren but the impressive sea cliffs at Doolin,
+which have also become a popular bouldering venue - The Aran Islands
+are also described in some detail. Seven inland crags have been
+developed and appear in the guide for the first time, these offer a
+different climbing experience to their better known coastal neighbours.<br>]]></description>
+    <styleUrl>#style64</styleUrl>
+    <Point>
+      <coordinates>-9.131012,52.716331,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Clark Mountain</name>
+    <description><![CDATA[<div dir="ltr">&quot;The best limestone in America&quot;</div>]]></description>
+    <styleUrl>#style25</styleUrl>
+    <Point>
+      <coordinates>-115.528625,35.468918,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Red Rocks, Nevada</name>
+    <description><![CDATA[<a href="http://www.climber.me/2008/08/20/beginners-guide-to-sport-climbing-red-rocks-nevada/" target="_blank">Beginners guide from climber.me</a><br>]]></description>
+    <styleUrl>#style44</styleUrl>
+    <Point>
+      <coordinates>-115.150452,36.160053,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Bugaboos</name>
+    <description><![CDATA[Somewhere in British Columbia.<br><br><a href="http://alpineinstitute.blogspot.com/2008/09/bugaboos.html" target="_blank">AAI article</a><br>]]></description>
+    <styleUrl>#style39</styleUrl>
+    <Point>
+      <coordinates>-125.683594,54.876606,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Switzerland</name>
+    <description><![CDATA[<a href="http://blog.rockrun.com/2008/08/article-bouldering-in-switzerland.html" target="_blank">Overview of swiss bouldering</a><br>]]></description>
+    <styleUrl>#style56</styleUrl>
+    <Point>
+      <coordinates>8.261719,47.129951,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rjukan, Norway</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://blog.rockrun.com/2008/10/article-ice-climbers-dream.html" target="_blank">Rock and run</a></div>]]></description>
+    <styleUrl>#style30</styleUrl>
+    <Point>
+      <coordinates>8.591480,59.878429,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Arapiles</name>
+    <description><![CDATA[<div dir="ltr">"The best crag in the world"<br><br><a href="http://www.ukclimbing.com/gear/review.php?id=1280" target="_blank">UKC review of new guidebook.</a><br><a href="http://www.chockstone.org/Arapiles/Arapiles.htm" target="_blank">chockstone.org</a><br></div>]]></description>
+    <styleUrl>#style26</styleUrl>
+    <Point>
+      <coordinates>141.941650,-36.744663,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mount Kenya</name>
+    <description><![CDATA[<br>]]></description>
+    <styleUrl>#style41</styleUrl>
+    <Point>
+      <coordinates>37.313175,-0.151062,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Kilimanjaro</name>
+    <description><![CDATA[<br>]]></description>
+    <styleUrl>#style63</styleUrl>
+    <Point>
+      <coordinates>37.358429,-3.064496,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Mount Meru</name>
+    <description><![CDATA[<br>]]></description>
+    <styleUrl>#style40</styleUrl>
+    <Point>
+      <coordinates>-1.502037,29.449465,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Le Boffi</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.ukclimbing.com/articles/page.php?id=1329" target="_blank">UKC article</a></div>]]></description>
+    <styleUrl>#style18</styleUrl>
+    <Point>
+      <coordinates>3.079605,44.097942,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Wadi Rum, Jordan</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://blog.rockrun.com/2008/10/article-wadi-rum-trad-climbing.html" target="_blank">R+R article</a></div>]]></description>
+    <styleUrl>#style52</styleUrl>
+    <Point>
+      <coordinates>36.584473,31.128199,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Allgau region</name>
+    <description><![CDATA[<a href="http://blog.rockrun.com/2008/10/article-bouldering-in-allgaeu-by-harry.html" target="_blank">R+R article</a><br><a href="http://www.blocheart.de/bouldern_E/EU/D/Allgaeu/" target="_blank"><br>Guidebook publishers website</a><br>]]></description>
+    <styleUrl>#style58</styleUrl>
+    <Point>
+      <coordinates>10.360107,47.706066,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Font</name>
+    <description><![CDATA[Needs no introduction!<br>]]></description>
+    <styleUrl>#style62</styleUrl>
+    <Point>
+      <coordinates>2.558441,48.374954,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cogne</name>
+    <description><![CDATA[Cascades and Xcountry skiing<br>]]></description>
+    <styleUrl>#style36</styleUrl>
+    <Point>
+      <coordinates>7.356033,45.608273,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Chamonix Mont-Blanc</name>
+    <description><![CDATA[No intro required<br>]]></description>
+    <styleUrl>#style67</styleUrl>
+    <Point>
+      <coordinates>6.866455,45.915810,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Rocklands</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.planetfear.com/articles/Rocklands_Bouldering_1023.html" target="_blank">Planetfear article</a><br><br><a href="http://www.rocklandsboulders.com/home" target="_blank">Rocklands website</a><br></div>]]></description>
+    <styleUrl>#style42</styleUrl>
+    <Point>
+      <coordinates>18.904724,-32.177937,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ailefriode</name>
+    <description><![CDATA[<a href="http://blog.rockrun.com/2008/10/x-file-11-ailefroide-bouldering.html" target="_blank">Rock and run article</a><br><br><span style="font-weight:bold">Overview    </span><br>A beautiful
+alpine area with a mix of superb mountaineering, multi pitch sport
+climbing and bouldering. The bouldering is on pristine granite blocks.
+The surroundings are particularly serene. A river runs through the
+picturesque valley and a glacier at the top of the valley is visible
+from the bouldering areas.<br><br><span style="font-weight:bold">Best Time to Go &amp; Conditions.   </span><br>Being
+an alpine venue, the elevation means that Ailefroide is a good choice
+for the summer months when it is too hot to boulder in many other
+European destinations. It rarely gets too hot, but nights are cool so
+take some warm clothes even in summer.<br>]]></description>
+    <styleUrl>#style61</styleUrl>
+    <Point>
+      <coordinates>6.445220,44.888046,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Las Vegas Bouldering</name>
+    <description><![CDATA[<div dir="ltr">New bouldering <a href="http://blog.rockrun.com/2008/10/review-vegas-bouldering.html" target="_blank">guide</a></div>]]></description>
+    <styleUrl>#style45</styleUrl>
+    <Point>
+      <coordinates>-115.194397,36.203281,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Siurana</name>
+    <description><![CDATA[<a href="http://blog.rockrun.com/2008/10/article-sirana-sport-climbing.html" target="_blank">Sporting climbing</a> at Siurana<br>]]></description>
+    <styleUrl>#style49</styleUrl>
+    <Point>
+      <coordinates>0.894699,41.265938,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Red River Gorge, Kentucky</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.cragbaby.com/2008/10/31/trip-beta-red-river-gorge-kentucky/" target="_blank">All the info from the CragBaby</a></div>]]></description>
+    <styleUrl>#style47</styleUrl>
+    <Point>
+      <coordinates>-83.825684,37.857506,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ibex, Utah</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://blog.rockrun.com/2008/11/x-file-12-ibex-utah.html" target="_blank">Rock and run article</a></div>]]></description>
+    <styleUrl>#style51</styleUrl>
+    <Point>
+      <coordinates>-113.422852,38.891033,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Finale Ligure</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://www.planetfear.com/articles/Sport_Climbing_on_the_Italian_Riviera_Finale_and_Oltrafinale_1050.html" target="_blank">PlanetFear</a></div>]]></description>
+    <styleUrl>#style6</styleUrl>
+    <Point>
+      <coordinates>8.345833,44.169891,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Penwith</name>
+    <description><![CDATA[<DIV dir="ltr">Bouldering around Penwith and West Cornwall. <BR><BR><A href="http://ukbouldering.com/board/index.php/topic,751.msg191678.html#msg191678" target="_blank">http://ukbouldering.com/board/index.php/topic,751.msg191678.html#msg191678</A> <BR><BR><A href="http://www.blocspenwith.co.uk/" target="_blank">http://www.blocspenwith.co.uk/</A> <BR><BR>Also ask Tom what he found down that way...</DIV>]]></description>
+    <styleUrl>#style43</styleUrl>
+    <Point>
+      <coordinates>-5.565948,50.152267,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>La Pedriza</name>
+    <description><![CDATA[<A href="http://www.rockrun.com/ProductDetail.asp?ProductID=4301" target="_blank">Guidebook</A> ]]></description>
+    <styleUrl>#style9</styleUrl>
+    <Point>
+      <coordinates>-3.768311,40.346542,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Ceuse</name>
+    <description><![CDATA[<A href="http://blog.rockrun.com/2009/02/article-ceuse-best-crag-in-world.html" target="_blank">R+R article</A>]]></description>
+    <styleUrl>#style14</styleUrl>
+    <Point>
+      <coordinates>5.936694,44.518295,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Climbing around Rio</name>
+    <description><![CDATA[<A href="http://www.planetfear.com/articles/Rio_Rocks_Climbing_In_Brazil_1062.html" target="_blank">Planetfear article</A>]]></description>
+    <styleUrl>#style4</styleUrl>
+    <Point>
+      <coordinates>-43.187256,-22.907803,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Joe&#39;s Valley</name>
+    <description><![CDATA[<A href="http://blog.rockrun.com/2009/02/x-file-13-joes-valley-utah.html" target="_blank">R+R article</A>]]></description>
+    <styleUrl>#style27</styleUrl>
+    <Point>
+      <coordinates>-111.132202,39.501923,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Picos del Europa</name>
+    <description><![CDATA[<DIV dir="ltr"><A href="http://www.ukclimbing.com/articles/page.php?id=1858" target="_blank">UKC article</A></DIV>]]></description>
+    <styleUrl>#style11</styleUrl>
+    <Point>
+      <coordinates>-4.837418,43.191662,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Lourmarin</name>
+    <description><![CDATA[<A href="http://blog.rockrun.com/2009/07/x-file-17-lourmarin-sport-climbing.html" target="_blank">R+R article</A>]]></description>
+    <styleUrl>#style38</styleUrl>
+    <Point>
+      <coordinates>5.344162,43.793900,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Yangshuo County, Guilin, Guangxi, China</name>
+    <description><![CDATA[<DIV dir="ltr"><A href="http://blog.rockrun.com/2009/08/x-file-20-yangshuo-county-china.html" target="_blank">R+R article</A></DIV>]]></description>
+    <styleUrl>#style16</styleUrl>
+    <Point>
+      <coordinates>110.496681,24.778433,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>San Gottardo</name>
+    <description><![CDATA[<DIV>Bouldering in the pass to then south of Andermatt.</DIV>
+<DIV>&nbsp;</DIV>
+<DIV><A href="http://blog.rockrun.com/2009/08/x-file-19-san-gottardo-bouldering.html" target="_blank">R+R article</A><br>&nbsp;</div>]]></description>
+    <styleUrl>#style53</styleUrl>
+    <Point>
+      <coordinates>8.594820,46.632893,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Cebu City</name>
+    <description><![CDATA[<div dir="ltr"><a href="http://blog.rockrun.com/2009/09/article-cantabaco-cebu-philippines.html" target="_blank">Climbing in the Philippines</a><br></div>]]></description>
+    <styleUrl>#style17</styleUrl>
+    <Point>
+      <coordinates>123.896935,10.345562,0.000000</coordinates>
+    </Point>
+  </Placemark>
+  <Placemark>
+    <name>Annot</name>
+    <description><![CDATA[<a href="http://blog.rockrun.com/2009/11/x-file-21-annot-bouldering.html" target="_blank">R+R article</a><br>]]></description>
+    <styleUrl>#style32</styleUrl>
+    <Point>
+      <coordinates>6.667554,43.965851,0.000000</coordinates>
+    </Point>
+  </Placemark>
+</Document>
+</kml>
