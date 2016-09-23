@@ -19,6 +19,29 @@
 
     // Result from Redirect auth flow.
     // [START getidptoken]
+
+    function toggleSignIn() {
+      if (!firebase.auth().currentUser) {
+        // [START createprovider]
+        var provider = new firebase.auth.GoogleAuthProvider();
+        // [END createprovider]
+        // [START addscopes]
+    //    provider.addScope('https://www.googleapis.com/auth/plus.login');
+        // [END addscopes]
+        // [START signin]
+        firebase.auth().signInWithRedirect(provider);
+        // [END signin]
+      } else {
+        // [START signout]
+        firebase.auth().signOut();
+        // [END signout]
+      }
+      // [START_EXCLUDE]
+      document.getElementById('quickstart-sign-in').disabled = true;
+      // [END_EXCLUDE]
+    }
+
+
     firebase.auth().getRedirectResult().then(function(result) {
       if (result.credential) {
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -65,22 +88,22 @@
 
         console.log(displayName);
         // [START_EXCLUDE]
-        // document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
-        // document.getElementById('quickstart-sign-in').textContent = 'Sign out';
-        // document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
+         document.getElementById('quickstart-sign-in-status').textContent = 'Signed in as: '+displayName;
+         document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+  //       document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
         // [END_EXCLUDE]
       } else {
         // User is signed out.
         // [START_EXCLUDE]
-        // document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
-        // document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
-        // document.getElementById('quickstart-account-details').textContent = 'null';
-        // document.getElementById('quickstart-oauthtoken').textContent = 'null';
+         document.getElementById('quickstart-sign-in-status').textContent = 'Anonymous Access';
+         document.getElementById('quickstart-sign-in').textContent = 'Sign in with Google';
+    //     document.getElementById('quickstart-account-details').textContent = 'null';
+    //     document.getElementById('quickstart-oauthtoken').textContent = 'null';
         // [END_EXCLUDE]
 
-        if (!firebase.auth().currentUser) {
+  /*      if (!firebase.auth().currentUser) {
            // [START createprovider]
-           
+
            var provider = new firebase.auth.GoogleAuthProvider();
            // [END createprovider]
            // [START addscopes]
@@ -90,14 +113,14 @@
            firebase.auth().signInWithRedirect(provider);
            // [END signin]
          }
-
+*/
       }
       // [START_EXCLUDE]
-      // document.getElementById('quickstart-sign-in').disabled = false;
+       document.getElementById('quickstart-sign-in').disabled = false;
       // [END_EXCLUDE]
     });
     // [END authstatelistener]
-    // document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
+    document.getElementById('quickstart-sign-in').addEventListener('click', toggleSignIn, false);
   }
 
 
