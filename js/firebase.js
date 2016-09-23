@@ -80,6 +80,7 @@
 
         if (!firebase.auth().currentUser) {
            // [START createprovider]
+           
            var provider = new firebase.auth.GoogleAuthProvider();
            // [END createprovider]
            // [START addscopes]
