@@ -7,7 +7,19 @@ html, body, #map-canvas {
 #infowindow {
   height: 200px;
 }
+/*
+#info-box {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    top: 30px;
+    height: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 30px;
 
+}
+*/
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px;
