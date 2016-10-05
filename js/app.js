@@ -5,7 +5,34 @@ function appViewModel() {
     var infowindow;
     var grouponLocations = [];
     var grouponReadableNames = [];
+  var bikeLayer = new google.maps.BicyclingLayer();
 
+  var polyOptions = {
+                    strokeWeight: 0,
+                    fillOpacity: 0.45,
+                    editable: true,
+                    draggable: true
+                };
+                // Creates a drawing manager attached to the map that allows the user to draw
+                // markers, lines, and shapes.
+        var        drawingManager = new google.maps.drawing.DrawingManager({
+                    drawingMode: google.maps.drawing.OverlayType.POLYGON,
+                    markerOptions: {
+                        draggable: true
+                    },
+                    polylineOptions: {
+                        editable: true,
+                        draggable: true
+                    },
+                    drawingControlOptions: {
+                      position: google.maps.ControlPosition.TOP_CENTER
+                    //  drawingModes: ['circle', 'polygon', 'polyline', 'rectangle']
+                    },
+                    rectangleOptions: polyOptions,
+                    circleOptions: polyOptions,
+                    polygonOptions: polyOptions,
+                    map: map
+                });
 
     google.maps.Polygon.prototype.getBounds = function () {
         var bounds = new google.maps.LatLngBounds();
@@ -139,6 +166,9 @@ function appViewModel() {
 
                                                                  ])})
 */
+
+
+
         map.data.loadGeoJson(
             'https://raw.githubusercontent.com/ginmoei/Google-Firebase/master/js/ps.json');
 
@@ -161,7 +191,118 @@ function appViewModel() {
         });
 
         //BromleyPolygon.setMap(map);
+// add bicycle layer to the current map
+bicycleCheckbox = document.getElementById("icon-cycle");
 
+bicycleCheckbox.addEventListener('change', function() {
+
+  if(bicycleCheckbox.checked == true){
+    bikeLayer.setMap(map);
+   }else{
+bikeLayer.setMap(null);
+  }
+
+});
+
+drawingCheckbox = document.getElementById("icon-drawing");
+
+drawingCheckbox.addEventListener('change', function() {
+
+  if(drawingCheckbox.checked == true){
+    drawingManager.setMap(map);
+   }else{
+drawingManager.setMap(null);
+  }
+
+});
+
+// add drawing tools to the map.
+
+function clearSelection () {
+               if (selectedShape) {
+                   if (selectedShape.type !== 'marker') {
+                       selectedShape.setEditable(false);
+                   }
+
+                   selectedShape = null;
+               }
+           }
+
+           function setSelection (shape) {
+               if (shape.type !== 'marker') {
+                   clearSelection();
+                   shape.setEditable(true);
+                   selectColor(shape.get('fillColor') || shape.get('strokeColor'));
+               }
+
+               selectedShape = shape;
+           }
+
+           function deleteSelectedShape () {
+               if (selectedShape) {
+                   selectedShape.setMap(null);
+               }
+           }
+
+           function selectColor (color) {
+               selectedColor = color;
+               for (var i = 0; i < colors.length; ++i) {
+                   var currColor = colors[i];
+                   colorButtons[currColor].style.border = currColor == color ? '2px solid #789' : '2px solid #fff';
+               }
+
+               // Retrieves the current options from the drawing manager and replaces the
+               // stroke or fill color as appropriate.
+               var polylineOptions = drawingManager.get('polylineOptions');
+               polylineOptions.strokeColor = color;
+               drawingManager.set('polylineOptions', polylineOptions);
+
+               var rectangleOptions = drawingManager.get('rectangleOptions');
+               rectangleOptions.fillColor = color;
+               drawingManager.set('rectangleOptions', rectangleOptions);
+
+               var circleOptions = drawingManager.get('circleOptions');
+               circleOptions.fillColor = color;
+               drawingManager.set('circleOptions', circleOptions);
+
+               var polygonOptions = drawingManager.get('polygonOptions');
+               polygonOptions.fillColor = color;
+               drawingManager.set('polygonOptions', polygonOptions);
+           }
+
+           function setSelectedShapeColor (color) {
+               if (selectedShape) {
+                   if (selectedShape.type == google.maps.drawing.OverlayType.POLYLINE) {
+                       selectedShape.set('strokeColor', color);
+                   } else {
+                       selectedShape.set('fillColor', color);
+                   }
+               }
+           }
+
+           function makeColorButton (color) {
+               var button = document.createElement('span');
+               button.className = 'color-button';
+               button.style.backgroundColor = color;
+               google.maps.event.addDomListener(button, 'click', function () {
+                   selectColor(color);
+                   setSelectedShapeColor(color);
+               });
+
+               return button;
+           }
+
+           function buildColorPalette () {
+               var colorPalette = document.getElementById('color-palette');
+               for (var i = 0; i < colors.length; ++i) {
+                   var currColor = colors[i];
+                   var colorButton = makeColorButton(currColor);
+                   colorPalette.appendChild(colorButton);
+                   colorButtons[currColor] = colorButton;
+               }
+               selectColor(colors[0]);
+           }
+// only areas which are turned on can have markers added. find a way to check these and have an admin screen to allow new areas.
         map.data.addListener('click', function (e) {
 
             var marker = new google.maps.Marker({
@@ -206,6 +347,45 @@ function appViewModel() {
         map.setCenter(center);
     });
 
+    google.maps.event.addListener(drawingManager, 'overlaycomplete', function (e) {
+                       var newShape = e.overlay;
+
+                       newShape.type = e.type;
+
+                       if (e.type !== google.maps.drawing.OverlayType.MARKER) {
+                           // Switch back to non-drawing mode after drawing a shape.
+                           drawingManager.setDrawingMode(null);
+
+                           // Add an event listener that selects the newly-drawn shape when the user
+                           // mouses down on it.
+                           google.maps.event.addListener(newShape, 'click', function (e) {
+                               if (e.vertex !== undefined) {
+                                   if (newShape.type === google.maps.drawing.OverlayType.POLYGON) {
+                                       var path = newShape.getPaths().getAt(e.path);
+                                       path.removeAt(e.vertex);
+                                       if (path.length < 3) {
+                                           newShape.setMap(null);
+                                       }
+                                   }
+                                   if (newShape.type === google.maps.drawing.OverlayType.POLYLINE) {
+                                       var path = newShape.getPath();
+                                       path.removeAt(e.vertex);
+                                       if (path.length < 2) {
+                                           newShape.setMap(null);
+                                       }
+                                   }
+                               }
+                               setSelection(newShape);
+                           });
+                           setSelection(newShape);
+                       }
+                       else {
+                           google.maps.event.addListener(newShape, 'click', function (e) {
+                               setSelection(newShape);
+                           });
+                           setSelection(newShape);
+                       }
+                   });
 
 
     // Create and place markers and info windows on the map based on data from API

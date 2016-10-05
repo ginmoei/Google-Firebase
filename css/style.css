@@ -1,7 +1,21 @@
-html, body, #map-canvas {
+
+html, body, #map_canvas {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map_canvas {
+  position: relative;
+
+}
+
+.page-content, .mdl-layout__content{
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+
 }
 
 #infowindow {
@@ -31,11 +45,6 @@ html, body, #map-canvas {
 #infowindow img {
   float: left;
   margin-right: 10px;
-}
-
-body {
-  position: relative;
-  font-size: 14px;
 }
 
 .searchbtn, .locbtn {
