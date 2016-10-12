@@ -175,6 +175,17 @@ this.initMap = function () {
         map = new google.maps.Map(document.getElementById('map-canvas'), {
             center: city,
             zoom: 11,
+            zoomControl: true,
+         zoomControlOptions: {
+             position: google.maps.ControlPosition.RIGHT_BOTTOM
+         },
+         scaleControl: true,
+         mapTypeControl: true,
+          mapTypeControlOptions: {
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            mapTypeIds: ['roadmap','satellite', 'hybrid','terrain'],
+            position: google.maps.ControlPosition.RIGHT_TOP
+          },
             styles: [{
                 featureType: 'poi',
                 stylers: [{
