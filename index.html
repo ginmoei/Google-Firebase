@@ -30,7 +30,7 @@
        <header class="mdl-layout__header">
           <div class="mdl-layout__header-row">
              <!-- Title -->
-             <span class="mdl-layout-title">Status: <span id="quickstart-sign-in-status">Please wait ...</span></span>
+             <!-- <span class="mdl-layout-title">Status: <span id="quickstart-sign-in-status">Please wait ...</span></span> -->
              <!-- Add spacer, to align navigation to the right -->
              <div class="mdl-layout-spacer"></div>
              <!-- Navigation -->
@@ -43,9 +43,11 @@
        </header>
 
        <div class="mdl-layout__drawer">
-          <span class="mdl-layout-title">PCF</span>
+          <span class="mdl-layout-title mdl-color--primary mdl-color-text--white">PCF</span>
           <nav class="mdl-navigation">
-            <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in">Sign in with Google</button>
+            <span id="quickstart-sign-in-status">Please wait ...</span>
+            <button disabled class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" id="quickstart-sign-in">Sign in with Google</button>
+            <!-- <button disabled class="mdl-button mdl-js-button mdl-button--raised" id="quickstart-sign-in">Sign in with Google</button> -->
 
              <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-cycle">
                <input type="checkbox" id="icon-cycle" class="mdl-icon-toggle__input" />
@@ -62,10 +64,58 @@
                 <button id="delete-button">Delete Selected Shape</button>
             </div>
           </div>
+          <!-- ADD COMMENTS -->
 
+          <div>
+      				<form action="#">
+      					<div class="mdl-textfield mdl-js-textfield">
+      						<input class="mdl-textfield__input" type="text" id="username" />
+      						<label class="mdl-textfield__label" for="username">Username</label>
+      					</div>
+                <div class="mdl-textfield mdl-js-textfield">
+   <input class="mdl-textfield__input" type="text" id="text1">
+   <label class="mdl-textfield__label" for="text1">Text...</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield">
+         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="text2">
+         <label class="mdl-textfield__label" for="text2">Number...</label>
+   <span class="mdl-textfield__error">Number required!</span>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield">
+   <input class="mdl-textfield__input" type="text" id="text3" disabled>
+   <label class="mdl-textfield__label" for="text3">Disabled...</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+       <input class="mdl-textfield__input" type="text" id="text4">
+       <label class="mdl-textfield__label" for="text4">Text...</label>
+    </div>
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+     <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="text5">
+     <label class="mdl-textfield__label" for="text5">Number...</label>
+<span class="mdl-textfield__error">Number required!</span>
+  </div>
+  <div class="mdl-textfield mdl-js-textfield">
+    <textarea class="mdl-textfield__input" type="text" rows= "3" id="text7" ></textarea>
+    <label class="mdl-textfield__label" for="text7">Lines...</label>
+ </div>
+ <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+   <label class="mdl-button mdl-js-button mdl-button--icon" for="text8">
+      <i class="material-icons">search</i>
+   </label>
+   <div class="mdl-textfield__expandable-holder">
+      <input class="mdl-textfield__input" type="text" id="text8">
+         <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+   </div>
+</div>
+      				</form>
+      			</div>
+      			<!-- <div class="mdl-card__actions mdl-card--border"> -->
+      				<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Save</button>
+      			<!-- </div> -->
+      		</div>
            </nav>
-       </div>
-
+       <!-- </div> -->
+<!-- END ADD COMMENTS -->
        <main class="mdl-layout__content">
          <div class="page-content" id="map-canvas">
 
